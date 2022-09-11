@@ -2,7 +2,7 @@
 
 #
 
-<p style="text-align: center">
+<p style="align: center">
     <a href="https://jacksonmarcelinofreitas.github.io/Mentoring_Form/">
         <img src="Buttom to see.png" alt="Button to see the project" style="width:250px; align:center">
     </a>
