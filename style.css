@@ -1,0 +1,211 @@
+body, html{
+    margin:  0;
+    padding: 0;
+}
+
+/*Criando variáveis*/
+:root{
+    --primary-color: #535971;
+    --secundary-color: #FF5374;
+    --background-color: #EFEFEF;
+    --label-color: #4E4958;
+    --input-color: #FAFAFC;
+    
+    --titles-font: 'Staatliches', cursive;
+    --text-font: 'Poppins', sans-serif;
+}
+
+/*Body*/
+body{
+    background: var(--background-color);
+}
+
+/*Coloca e seta um novo elemento pelo CSS*/
+body::before{
+    content: '';
+
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 436px;
+    
+    background: var(--primary-color);
+}
+
+
+.page{
+    margin: auto;
+    width: 750px;
+}
+
+/*Header*/
+header{
+    color: #EFEFEF;
+}
+
+header h1{
+    margin-top: 140px;
+
+    line-height: 60px;
+
+    font-family: var(--titles-font);
+    font-size: 48px;
+    font-weight: 400;
+}
+
+header p{
+    margin-top: 18px;
+
+    line-height: 30px;
+
+    font-family: var(--text-font);
+    font-weight: 400;
+    font-size: 20px; 
+}
+
+/*Form*/
+form{
+    background: #FFFFFF;
+
+    margin-top: 58px;
+    padding: 64px;
+
+    border-radius: 20px 20px 0px 0px;
+}
+
+fieldset{
+    border: none;
+}
+
+
+fieldset legend{
+    font-family: 'Staatliches';
+    line-height: 34px;
+
+    font-weight: 400;
+    font-size: 24px;
+    
+    border-bottom: 1px solid var(--background-color);
+
+    color: var(--primary-color);
+
+    padding-bottom: 16px;
+}
+
+/*Inputs*/
+.input-wrapper{
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 16px;
+
+    font-family: var(--text-font);
+}
+
+.input-wrapper span{
+    font-size: 12px;
+    line-height: 20px;
+
+    color: #C1BCCC;
+}
+
+.input-wrapper span:hover{
+    color: #605f61;
+}
+
+.input-wrapper label{
+    font-family: var(--text-font);
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+
+    margin-bottom: 8px;
+
+    color: var(--label-color);
+}
+
+.input-wrapper input{
+    background: var(--input-color);
+
+    border-radius: 8px;
+    border: 1px solid #E6E6F0;
+
+    height: 56px;
+
+    padding-left: 20px;
+}
+
+input[type="date"],[type="time"]{
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+
+    font-family: var(--text-font);
+}
+
+.col-2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 22px;
+}
+
+.col-2 > div{
+    width: 100%;
+}
+
+.col-3 {
+    gap: 10px;
+    display: flex;
+}
+
+.col-3 > div{
+    width: 100%;
+}
+
+div .sub-text{
+    font-family: var(--titles-font);
+    font-weight: 400;
+    font-size: 20px;
+
+    line-height: 34px;
+
+    color: var(--primary-color);
+
+    margin: 32px 0 11px 0;
+}
+
+/*Footer*/
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 160px;
+    margin-bottom: 366px;
+    padding: 0 71px;
+
+    background: var(--primary-color);
+
+    border-radius: 0px 0px 20px 20px;
+}
+
+footer .button{
+    
+    font-family: var(--titles-font);
+    font-size: 20px;
+    line-height: 26px;
+
+    width: 100%;
+    padding: 15px 40px;
+
+    background: var(--secundary-color);
+    color: var(--background-color);
+
+    border: none;
+    border-radius: 20px;
+}
+
+/*By Jackson Freitas*/
